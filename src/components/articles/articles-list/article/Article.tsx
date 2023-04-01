@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { IArticle } from "../../../types/article";
+import { IArticle } from "../../../../types/article";
 
 interface ArticleProps {
   article: IArticle;

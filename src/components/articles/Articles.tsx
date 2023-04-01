@@ -1,19 +1,14 @@
 import { FC } from "react";
 
-import { IArticle } from "../../types/article";
-import Article from "./article";
+import ArticlesList from "./articles-list";
+import SearchArticlesForm from "./search-articles-form";
 
-interface ArticlesProps {
-  articles: IArticle[];
-}
-
-const Articles: FC<ArticlesProps> = ({ articles }) => {
+const Articles: FC = () => {
   return (
-    <ul>
-      {articles.map((article) => (
-        <Article key={article.id} article={article} />
-      ))}
-    </ul>
+    <>
+      <SearchArticlesForm />
+      <ArticlesList articles={[]} />
+    </>
   );
 };
 
