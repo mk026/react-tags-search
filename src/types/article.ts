@@ -3,4 +3,5 @@ export interface IArticle {
   title: string;
   content: string;
   tags: number[];
+  createdAt: string;
 }
