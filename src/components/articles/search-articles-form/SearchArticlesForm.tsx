@@ -1,6 +1,7 @@
 import { FC, FocusEvent, useState } from "react";
 
 import SearchSuggestions from "./search-suggestions";
+import Button from "../../ui/button";
 
 import classes from "./SearchArticleForm.module.css";
 
@@ -25,7 +26,7 @@ const SearchArticlesForm: FC = () => {
           onFocus={onFocus}
           onBlur={onBlur}
         />
-        <button className={classes["search-articles__button"]}>Search</button>
+        <Button className={classes["search-articles__button"]}>Search</Button>
       </form>
       <SearchSuggestions isOpen={suggestionsIsOpen} />
     </div>
