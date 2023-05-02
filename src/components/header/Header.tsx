@@ -2,9 +2,11 @@ import { FC } from "react";
 
 import AppTitle from "./app-title";
 
+import classes from "./Header.module.css";
+
 const Header: FC = () => {
   return (
-    <div>
+    <div className={classes.header}>
       <AppTitle />
     </div>
   );
