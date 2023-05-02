@@ -3,13 +3,15 @@ import { FC } from "react";
 import { IArticle } from "../../../types/article";
 import Article from "./article";
 
-interface ArticlesProps {
+import classes from "./ArticlesGrid.module.css";
+
+interface ArticlesGridProps {
   articles: IArticle[];
 }
 
-const ArticlesList: FC<ArticlesProps> = ({ articles }) => {
+const ArticlesGrid: FC<ArticlesGridProps> = ({ articles }) => {
   return (
-    <ul>
+    <ul className={classes["articles-grid"]}>
       {articles.map((article) => (
         <Article key={article.id} article={article} />
       ))}
@@ -17,4 +19,4 @@ const ArticlesList: FC<ArticlesProps> = ({ articles }) => {
   );
 };
 
-export default ArticlesList;
+export default ArticlesGrid;
