@@ -1,0 +1,16 @@
+.search-articles {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.search-articles__input {
+  font: inherit;
+
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.search-articles__button {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
