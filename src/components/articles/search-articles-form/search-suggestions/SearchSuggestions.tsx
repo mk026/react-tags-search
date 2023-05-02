@@ -1,7 +1,11 @@
 import { FC } from "react";
 
-const SearchSuggestions: FC = () => {
-  return <div>SearchSuggestions</div>;
+interface SearchSuggestionsProps {
+  isOpen: boolean;
+}
+
+const SearchSuggestions: FC<SearchSuggestionsProps> = ({ isOpen }) => {
+  return isOpen ? <div>SearchSuggestions</div> : null;
 };
 
 export default SearchSuggestions;
