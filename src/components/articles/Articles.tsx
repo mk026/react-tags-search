@@ -1,15 +1,15 @@
 import { FC } from "react";
 
 import SearchArticlesForm from "./search-articles-form";
-import { getFakeArticles } from "../../utils/getFakeData";
 import ArticlesGrid from "./articles-grid/ArticlesGrid";
+import { useArticlesQuery } from "../../hooks/useArticlesQuery";
 
 const Articles: FC = () => {
-  const articles = getFakeArticles(10);
+  const { data } = useArticlesQuery();
   return (
     <>
       <SearchArticlesForm />
-      <ArticlesGrid articles={articles} />
+      <ArticlesGrid articles={data || []} />
     </>
   );
 };
