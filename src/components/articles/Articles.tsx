@@ -2,10 +2,10 @@ import { FC } from "react";
 
 import SearchArticlesForm from "./search-articles-form";
 import ArticlesGrid from "./articles-grid/ArticlesGrid";
-import { useArticlesQuery } from "../../hooks/useArticlesQuery";
+import { useGetArticlesQuery } from "../../hooks/useGetArticlesQuery";
 
 const Articles: FC = () => {
-  const { data } = useArticlesQuery();
+  const { data } = useGetArticlesQuery();
   return (
     <>
       <SearchArticlesForm />
