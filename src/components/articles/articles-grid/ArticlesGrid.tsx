@@ -11,11 +11,11 @@ interface ArticlesGridProps {
 
 const ArticlesGrid: FC<ArticlesGridProps> = ({ articles }) => {
   return (
-    <ul className={classes["articles-grid"]}>
+    <div className={classes["articles-grid"]}>
       {articles.map((article) => (
         <Article key={article.id} article={article} />
       ))}
-    </ul>
+    </div>
   );
 };
 
