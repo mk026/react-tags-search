@@ -1,4 +1,10 @@
 .suggestions {
   margin-top: 0.5rem;
   padding: 0.3rem;
+
+  border-radius: 0.5rem;
+}
+
+.tag {
+  font-size: 1.1rem;
 }
